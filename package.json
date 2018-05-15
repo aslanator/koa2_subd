@@ -1,0 +1,31 @@
+{
+  "name": "koa2_subd",
+  "version": "1.0.0",
+  "description": "test task from \"Top line\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aslanator/koa2_subd.git"
+  },
+  "keywords": [
+    "test",
+    "topline",
+    "koa2"
+  ],
+  "author": "Aslanator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aslanator/koa2_subd/issues"
+  },
+  "homepage": "https://github.com/aslanator/koa2_subd#readme",
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-body": "^2.5.0",
+    "koa-http-request": "^2.2.1",
+    "koa-router": "^7.4.0",
+    "promise-mysql": "^3.2.1"
+  }
+}
