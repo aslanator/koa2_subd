@@ -11,25 +11,6 @@ const app = new Koa(),
   koaRouter = new KoaRouter(),
   sqlController = new SqlController(dbconfig);
 
-let users = [
-  {
-    name: 'Aslanator',
-    mail: 'aslanator@mail.ru'
-  },
-  {
-    name: 'John',
-    mail: 'John@mail.ru'
-  },
-  {
-    name: 'Vilhelm',
-    mail: 'Vilhelm@mail.ru'
-  }
-]
-
-koaRouter.get('/user/:id/', ctx => {
-  ctx.body = users[ctx.params.id];
-});
-
 koaRouter.get('/puresql/:sql', async (ctx, next) => {
   ctx.body = await sqlController.puresql(ctx.params.sql);
 });

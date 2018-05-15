@@ -35,7 +35,7 @@ module.exports = class SqlController {
     }
   }
 
-  async generateBookTable(ctx, max = 10000) {
+  async generateBookTable(ctx, max = 100000) {
     try {
       await this.pool.query('DROP TABLE IF EXISTS `books`');
       await this.pool.query('CREATE TABLE books ( id INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255) NOT NULL, date VARCHAR(255), author VARCHAR(255),  description TEXT, image TEXT)');
